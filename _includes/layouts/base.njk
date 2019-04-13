@@ -4,20 +4,80 @@
 	{% include "components/head.njk" %}
 
 	<body>
-
+    
+    <div id="page">  
+		<div class="mh-head Sticky">
+            <span class="mh-btns-left">
+                <a class="fa fa-bars" href="#menu"></a>
+            </span>
+            <span class="mh-text">E-SPORT INDONESIA</span>
+        </div>
 		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
-			{% include "components/nav.njk" %}
+			<div class="wrapper">
+				<div class="header-area"> 
+                    <div class="logo">
+                        <em>
+                            <img  src="{{ '/' | url }}static/img/logo.svg" alt="e-sport indonesia">
+                            <a id="lg" href="{{ '/' | url }}">{{ metadata.title }}</a>
+                        </em>
+                    </div>
+                    <div class="top-menu">
+                        {% include "components/nav.njk" %}
+                    </div>
+                </div>
+            </div>
 		</header>
-
-		<main>
+		
+		<main>	
 			{{ layoutContent | safe }}
-		</main>
+		</main>		
 
-		{% include "components/footer.njk" %}
+        {% include "components/thumb-slider.njk" %}
+        {% include "components/arsipblog.njk" %}
+        {% include "components/footer.njk" %}
+
+
+        <nav id="menu">
+        <ul>
+            <li>
+                <img  src="{{ '/' | url }}static/img/logo.svg" alt="e-sport indonesia">
+            </li>
+            {%- for nav in collections.nav | sort(attribute="date") -%}
+            <li>
+                <a href="{{ nav.url | url }}"{% if nav.url == page.url %} data-current="current item"{% endif %}>{{ nav.data.navtitle }}</a>
+            </li>
+            {%- endfor -%}
+        </ul>
+        </nav>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.3.3/jquery.mmenu.all.js"></script>
+<script type="text/javascript" src="{{ '/' | url }}_includes/assets/js/jquery.mhead.js"></script>
+<script type="text/javascript">
+    $(function() {
+
+        //	create a menu
+        $('#menu').mmenu();
+
+        //	fire the plugin
+        $('.mh-head').mhead({
+            hooks: {
+                'scrolledIn:before': function () {
+                    console.log('scrolledIn');
+                },
+                'scrolledOut:before': function () {
+                    console.log('scrolledOut');
+                }
+            }
+        });
+
+        //	for demo only
+        $('a[href^="#/"]').click(function() {
+            alert( 'Thank you for clicking, but that\'s a demo link.' );
+            return;
+        })
+    });
+</script>
+
 
 	</body>
-
 </html>

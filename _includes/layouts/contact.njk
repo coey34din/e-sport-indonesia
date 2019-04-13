@@ -2,8 +2,11 @@
 layout: layouts/base.njk
 section: contact
 ---
+{% include "components/imgpage.njk" %}
+<section class="wrapper ada">
 <h1>{{ title }}</h1>
 
 {{ layoutContent | safe }}
 
 {% include "components/form.njk" %}
+</section>

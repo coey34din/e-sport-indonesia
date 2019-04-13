@@ -1,0 +1,32 @@
+<section class="home-box">
+        {% set articleslist = collections.posts %}
+        {% set a = 0 %}
+        {% for post in articleslist | reverse %}
+            {% if a < 6 %}
+                {%set a = a + 1 %}
+                <aside {% if post.url == url %} data-current="current item"{% endif %} class="col-container">
+                    <div class="point">
+                        <div class="star"></div>
+                        <span>1s</span>
+                    </div>
+                    <div class="point-content">
+                        <h3 class="title">
+                            <a href="{{ post.url | url }}">
+                                {% if post.data.title %}                                             	
+                                        {{ post.data.title }}
+                                {% else %}
+                                        Untitled
+                                {% endif %}
+                            </a>
+                        </h3>	
+                        {% if post.data.summary %}
+                            <div class="description">
+                                {{ post.data.summary }}
+                            </div>
+                        {% endif %}
+                        
+                    </div>
+                </aside>
+            {% endif %}    
+        {% endfor %}
+</section>

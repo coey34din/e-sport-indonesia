@@ -1,157 +1,118 @@
-:root {
-	--turkey: #FFF0EB;
-	--white: white;
-	--blue: blue;
-}
-
+@import url("https://fonts.googleapis.com/css?family=Khand|Poppins");
 *, *:before, *:after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html,
 body {
-	padding: 0;
-	margin: 0;
-	font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-size: 14px;
 }
 
 body {
-	display: grid;
-	height: 100vh;
-	grid-template-rows: auto 1fr auto;
-	background-color: var(--turkey);
-}
-
-main {
-	max-width: 37.5em;
+  background-color: #3A3A3A;
+  color: #FFF0EB;
 }
 
 p,
 pre,
 code {
-	line-height: 1.5;
+  line-height: 1.5;
 }
 
 a[href],
 a[href]:visited {
-	color: var(--blue);
+  color: goldenrod;
 }
 
 a[href]:not(:hover) {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 header,
-main,
 footer {
-	padding: 1em;
-}
-
-main {
-	padding-bottom: 2em;
-}
-
-main :first-child,
-main > article :first-child {
-	margin-top: 0;
+  padding: 1em;
 }
 
 pre {
-	font-size: 14px;
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	-moz-tab-size: 2;
-	tab-size: 2;
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-	padding: 1em;
-	margin: .5em 0;
+  font-size: 14px;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+     tab-size: 2;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  padding: 1em;
+  margin: .5em 0;
 }
 
 ul {
-	padding: 0;
-	list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
-/* Header Logo (style as h2) */
-header > em {
-	display: block;
-	font-size: 2em;
-	margin: .67em 0;
-	font-weight: bold;
-	font-style: normal;
-}
-
-/* Header Nav */
-header nav ul :first-child {
-	margin-left: 0;
-}
-
-header nav li {
-	display: inline-block;
-	margin: 0 .5em;
-}
-
-header nav li a[href]:not(:hover) {
-	text-decoration: none;
-}
-
-header nav li a[data-current="current item"] {
-	font-weight: 700;
-	text-decoration: underline;
+.yellow {
+  color: #fac800;
 }
 
 /* Posts List */
 article {
-	margin-bottom: 1em;
-	padding-bottom: 1em;
-	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid var(--white);
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #939393;
+}
+
+.owl-loaded {
+  margin-bottom: 30px;
 }
 
 main > section > article > * {
-	margin-top: 0;
-	margin-bottom: .5em;
+  margin-top: 0;
+  margin-bottom: .5em;
 }
 
 /* Post Tags */
 a[rel="tag"],
 a[rel="tag"]:visited {
-	display: inline-block;
+  display: inline-block;
   vertical-align: text-top;
   text-transform: uppercase;
-	letter-spacing: .1em;
+  letter-spacing: .1em;
   font-size: .625em;
   padding: 0 .5em;
-	line-height: 2em;
-	height: 2em;
-  border: 1px solid var(--white);
-	background-color: var(--white);
-	color: var(--blue);
+  line-height: 2em;
+  height: 2em;
+  border: 1px solid white;
+  background-color: white;
+  color: blue;
   border-radius: .25em;
   text-decoration: none;
-	margin: 0 .5em .5em 0;
+  margin: 0 .5em .5em 0;
 }
 
 a[rel="tag"]:hover {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
-	color: var(--white);
+  border: 1px solid blue;
+  background-color: blue;
+  color: white;
 }
 
 a[rel="tag"]:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 /* Contact Form */
 form {
+  display: -ms-grid;
   display: grid;
-	padding: 2em 0;
+  padding: 2em 0;
 }
 
 form label {
@@ -161,27 +122,793 @@ form label {
 input,
 textarea,
 button {
-  width: 100%;
   padding: 1em;
   margin-bottom: 1em;
-	font-size: 1rem;
-	font-family: "Avenir", "Avenir Next", sans-serif;
+  font-size: 1rem;
+  font-family: "Avenir", "Avenir Next", sans-serif;
 }
 
 input,
 textarea {
-	border: 1px solid black;
+  border: 1px solid black;
 }
 
 button {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
-	color: var(--white);
-	cursor: pointer;
+  border: 1px solid #7a6202;
+  background-color: #7a6202;
+  color: white;
+  cursor: pointer;
 }
 
-@media screen and (min-width:768px) {
-	:root {
-		font-size: 1.1rem;
-	}
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* Header*/
+header {
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.452);
+}
+
+header em {
+  display: block;
+  font-size: 2em;
+  margin: .67em 0;
+  font-weight: bold;
+  font-style: normal;
+}
+
+header .header-area .logo {
+  display: inline-table;
+}
+
+header .header-area .logo img {
+  width: 51px;
+  display: table;
+  float: left;
+  margin-right: 12px;
+}
+
+header .header-area .top-menu {
+  display: inline-table;
+  float: right;
+}
+
+header .header-area .top-menu nav ul :first-child {
+  margin-left: 0;
+}
+
+header .header-area .top-menu nav li {
+  display: inline-block;
+  margin: 0 .5em;
+}
+
+header .header-area .top-menu nav li a[href]:not(:hover) {
+  text-decoration: none;
+}
+
+header .header-area .top-menu nav li a[data-current="current item"] {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+main {
+  display: block;
+  width: 100%;
+  text-align: justify;
+}
+
+main h1 {
+  font-family: "Khand";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 0;
+  display: table;
+}
+
+main .litle-text {
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+main .imgpage {
+  display: table;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main .imgpage img {
+  width: 100%;
+}
+
+main .cont-left {
+  width: 50%;
+  float: left;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+main .cont-left .font-B {
+  font-size: 25px;
+  color: #ffffff;
+  line-height: 1.1;
+  text-align: center;
+  font-family: "Khand";
+}
+
+main .cont-right {
+  width: 50%;
+  float: left;
+  padding-left: 70px;
+  margin-bottom: 30px;
+}
+
+main .cont-right .home-box {
+  margin-top: 100px;
+}
+
+main .col-container {
+  width: 50%;
+  padding-left: 20px;
+  display: inline-table;
+  margin-bottom: 20px;
+}
+
+main .col-container .point {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  border: 1px solid #eae6e6;
+  text-align: center;
+  font-family: 'Khand';
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+main .col-container .point .star {
+  background: url("/static/img/icons8-star-24.png") no-repeat;
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: -2px;
+}
+
+main .col-container .point-content {
+  display: inline-block;
+  width: calc(100% - 65px);
+}
+
+main .col-container .point-content .title {
+  color: #fac800;
+  font-weight: 600;
+  font-family: Khand;
+  font-size: 16px;
+  margin-top: -5px;
+  margin-bottom: 0;
+  height: 35px;
+  overflow: hidden;
+  line-height: 1;
+}
+
+main .col-container .point-content .description {
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 12px;
+  text-align: left;
+  height: 50px;
+  overflow: hidden;
+}
+
+.thumb-slider {
+  display: table;
+  width: 100%;
+  background: #FAC800;
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+.thumb-slider .slider-box {
+  width: 18.711111%;
+  display: inline-table;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 6px;
+  border: 1px solid #fff;
+  line-height: 0;
+}
+
+.thumb-slider .slider-box:nth-child(5) {
+  margin-right: 0;
+}
+
+.thumb-slider .slider-box img {
+  width: 100%;
+}
+
+.arsipblog {
+  display: table;
+  width: 100%;
+}
+
+.arsipblog .blok-post-list {
+  display: table;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.arsipblog .blok-post-list .content-title-element {
+  margin: 30px 0;
+}
+
+.arsipblog .blok-post-list .content-title-element .title {
+  font-family: 'Khand';
+  font-weight: 700;
+  font-size: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.arsipblog .blok-post-list .content-title-element .title span {
+  color: #fac800;
+}
+
+.arsipblog .blok-post-list .content-title-element .description {
+  color: #777777;
+}
+
+.arsipblog .post-list-styles {
+  margin-bottom: 60px;
+  width: 33.33333333333333%;
+  padding: 0px 15px;
+  float: left;
+}
+
+.arsipblog .post-list-styles .image {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 21px;
+}
+
+.arsipblog .post-list-styles .image img {
+  width: 100%;
+  display: block;
+}
+
+.arsipblog .post-list-styles .title {
+  color: #fc0000;
+  font-size: 27px;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 9px;
+  font-family: 'Khand';
+}
+
+.arsipblog .post-list-styles .excerpt {
+  margin-bottom: 23px;
+  max-height: 85px;
+  overflow: hidden;
+}
+
+.arsipblog .post-list-styles .more-button {
+  background: #fac800;
+  border: 1px solid #fac800;
+  border-radius: 25px;
+  float: right;
+  display: block;
+  color: #FFFFFF;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 7px 26px 5px;
+  font-weight: 500;
+}
+
+.arsipblog .post-list-styles .post-information {
+  list-style: none;
+  padding: 0px;
+  margin: 9px 0px 0px;
+  font-size: 12px;
+  float: left;
+}
+
+.arsipblog .post-list-styles .post-information li {
+  display: inline-block;
+  margin-right: 19px;
+}
+
+.arsipblog .post-list-styles .post-information .date {
+  background: url("/static/img/calendar.png") no-repeat;
+  padding-left: 20px;
+}
+
+.arsipblog .post-list-styles .post-information .comment {
+  background: url("/static/img/comment.png") no-repeat;
+  padding-left: 20px;
+}
+
+.container {
+  width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.static {
+  position: static;
+}
+
+.align-items-center {
+  -ms-flex-align: center !important;
+  -webkit-box-align: center !important;
+          align-items: center !important;
+}
+
+.d-flex {
+  display: -ms-flexbox !important;
+  display: -webkit-box;
+  display: flex;
+}
+
+.cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cont-slider {
+  text-align: center;
+}
+
+.cont-slider h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.owl-carousel .owl-slide {
+  position: relative;
+  height: 100vh;
+  background-color: lightgray;
+}
+
+.owl-carousel .owl-slide-animated {
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.05s;
+  transition: all 0.05s;
+}
+
+.owl-carousel .owl-slide-animated.is-transitioned {
+  -webkit-transform: none;
+  transform: none;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.owl-carousel .owl-slide-title.is-transitioned {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.owl-carousel .owl-slide-subtitle.is-transitioned {
+  -webkit-transition-delay: 0.35s;
+          transition-delay: 0.35s;
+}
+
+.owl-carousel .owl-slide-cta.is-transitioned {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.owl-carousel .owl-dots,
+.owl-carousel .owl-nav {
+  position: absolute;
+}
+
+.owl-carousel .owl-dots .owl-dot,
+.owl-carousel .owl-nav [class*="owl-"]:focus {
+  outline: none;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+  background: transparent;
+  border: 1px solid #000;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.owl-carousel .owl-dots .owl-dot:hover span,
+.owl-carousel .owl-dots .owl-dot.active span {
+  background: #000;
+}
+
+.owl-carousel .owl-nav {
+  left: 50%;
+  top: 15%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+.owl-carousel .owl-nav svg {
+  opacity: 0.3;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.owl-carousel .owl-nav button:hover svg {
+  opacity: 1;
+}
+
+.owl-carousel .owl-nav [class*="owl-"]:hover {
+  background: transparent;
+}
+
+.btn {
+  margin-top: 30px;
+}
+
+.btn-primary {
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 10px 45px 9px;
+  border-radius: 5px;
+  display: inline-block;
+  border-radius: 25px;
+  margin-right: 30px;
+  font-size: 14px;
+  position: relative;
+  z-index: 3000;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: #fac800;
+  border-color: #fac800;
+}
+
+footer {
+  display: table;
+  width: 100%;
+  background: #0A0A0A;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 1.1rem;
+  }
+  .mh-head {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .header-area .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .header-area .top-menu {
+    width: 100%;
+    text-align: center;
+  }
+  main h1 {
+    font-size: 35px;
+  }
+  main .col-container {
+    width: 100%;
+  }
+  .thumb-slider .slider-box {
+    width: 42.711111%;
+  }
+  .arsipblog .blok-post-list .content-title-element .title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 667px) {
+  .arsipblog .post-list-styles {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .arsipblog .post-information .date {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    display: none;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  main .col-container {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  main .cont-left {
+    width: 100%;
+    margin: 0;
+  }
+  main .cont-right {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  main .cont-right .home-box {
+    padding: 0;
+    margin-top: 30px;
+  }
+  .thumb-slider .slider-box {
+    width: 40.711111%;
+    margin: 10px;
+  }
+  .arsipblog .blok-post-list {
+    margin-top: 0;
+  }
+  .arsipblog .blok-post-list .post-information {
+    width: 57%;
+  }
+  .btn-primary {
+    margin-bottom: 15px;
+  }
+  /* menu mobile */
+  nav:not(.mm-menu) {
+    display: none;
+  }
+  .mh-head {
+    text-align: center;
+    padding: 0 10px;
+    margin: 0;
+    position: relative;
+    background: #000;
+    color: #fff;
+    min-height: 40px;
+    display: block;
+  }
+  .mm-listitem {
+    border-color: #848484 !important;
+  }
+  .mm-menu, .mm-panel, .mm-panels {
+    background: #424242 !important;
+    -webkit-box-shadow: inset 0px 11px 9px #ccc;
+            box-shadow: inset 0px 11px 9px #ccc;
+  }
+  .mm-navbar {
+    background: #1b1b1b !important;
+    color: #fff;
+  }
+  .mh-head a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .mh-head.mh-size-2 {
+    min-height: 80px;
+  }
+  .mh-head.mh-size-3 {
+    min-height: 120px;
+  }
+  .mh-head.mh-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition: -webkit-transform .2s ease;
+    -webkit-transition: -webkit-transform .2s ease;
+    transition: transform .2s ease;
+    transition: transform .2s ease, -webkit-transform .2s ease;
+    transition: transform .2s ease,-webkit-transform .2s ease;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .mh-head.mh-sticky.mh-scrolledout {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  .mh-head .mh-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    display: block;
+    padding: 10px;
+  }
+  .mh-head .mh-align-left .mh-text {
+    text-align: left;
+  }
+  .mh-head .mh-align-right .mh-text {
+    text-align: right;
+  }
+  .mh-head .mh-btns-left {
+    padding-left: 50px;
+  }
+  .mh-head .mh-btns-left-2 {
+    padding-left: 90px;
+  }
+  .mh-head .mh-btns-left-3 {
+    padding-left: 130px;
+  }
+  .mh-head .mh-btns-right {
+    padding-right: 50px;
+  }
+  .mh-head .mh-btns-right-2 {
+    padding-right: 90px;
+  }
+  .mh-head.mh-btns-right-3 {
+    padding-right: 130px;
+  }
+  .mh-head .mh-btns-left, .mh-head .mh-btns-right {
+    display: block;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  .mh-head .mh-btns-left {
+    left: 10px;
+  }
+  .mh-head .mh-btns-right {
+    right: 10px;
+  }
+  .mh-head.mh-btns-left-2 .mh-btns-left, .mh-head.mh-btns-right-2 .mh-btns-right {
+    width: 80px;
+  }
+  .mh-head.mh-btns-left-3 .mh-btns-left, .mh-head.mh-btns-right-3 .mh-btns-right {
+    width: 120px;
+  }
+  .mh-head .mh-btns-left > *, .mh-head .mh-btns-right > * {
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    width: 40px;
+    display: block;
+    padding: 10px 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .mh-head .mh-btns-left > :nth-child(1), .mh-head .mh-btns-right > :nth-child(1) {
+    left: 0;
+  }
+  .mh-head .mh-btns-left > :nth-child(2), .mh-head .mh-btns-right > :nth-child(2) {
+    left: 40px;
+  }
+  .mh-head .mh-btns-left > :nth-child(3), .mh-head .mh-btns-right > :nth-child(3) {
+    left: 80px;
+  }
+  .mh-head .mh-list {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    white-space: nowrap;
+    list-style: none;
+    line-height: 20px;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .mh-head .mh-list li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+  .mh-head .mh-list li a, .mh-head .mh-list li span {
+    display: block;
+    padding: 10px;
+  }
+  .mh-head.mh-align-left .mh-list {
+    text-align: left;
+  }
+  .mh-head.mh-align-right .mh-list {
+    text-align: right;
+  }
+  .mh-head .hamburger {
+    margin-top: 2px;
+    -webkit-transform: scale(0.5, 0.6) translateY(-50%);
+    transform: scale(0.5, 0.6) translateY(-50%);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+  }
+  .mh-head .mh-image, .mh-head .mh-logo {
+    background: none center center transparent no-repeat;
+    display: block;
+    height: 100%;
+  }
+  .mh-head .mh-logo {
+    background-size: contain;
+    background-clip: content-box;
+    padding: 10px;
+  }
+  .mh-head.mh-align-left .mh-logo {
+    background-position: left center;
+  }
+  .mh-head.mh-align-right .mh-logo {
+    background-position: right center;
+  }
+  .mh-head .mh-image {
+    background-size: cover;
+  }
+  .mh-head .mh-form {
+    padding: 7px 0;
+    position: relative;
+  }
+  .mh-head .mh-form input {
+    background: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 26px;
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 26px;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .mh-head .mh-form .fa {
+    color: #ccc;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    position: absolute;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  section {
+    padding: 20px;
+  }
+  main .cont-left {
+    padding-left: 0px;
+  }
+  main .cont-right {
+    padding-left: 20px;
+  }
+  .arsipblog .blok-post-list .post-information {
+    width: 65%;
+    margin: 0;
+  }
+  .arsipblog .blok-post-list .post-information li {
+    padding-bottom: 10px;
+  }
+  .arsipblog .blok-post-list .content-title-element .title {
+    padding-left: 25px;
+  }
+  .arsipblog .blok-post-list .content-title-element .description {
+    padding-left: 25px;
+  }
 }
