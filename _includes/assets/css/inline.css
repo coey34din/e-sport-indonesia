@@ -673,6 +673,13 @@ footer {
     margin-bottom: 15px;
   }
   /* menu mobile */
+  #mmobile-logo {
+    text-align: center;
+  }
+  #mmobile-logo img {
+    margin: 0 auto;
+    display: table;
+  }
   nav:not(.mm-menu) {
     display: none;
   }
