@@ -11,9 +11,10 @@ pagination:
 permalink: /tags/{{ tag }}/
 layout: layouts/base.njk
 ---
-
+{% include "components/imgpage.njk" %}
+<section>
 <h1>Tagged “{{ tag }}”</h1>
-
+</section>
 {% set postslist = collections[ tag ] %}
 {% include "components/postslist.njk" %}
 
