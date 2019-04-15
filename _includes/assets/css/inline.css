@@ -311,6 +311,10 @@ main .col-container .point-content .description {
   overflow: hidden;
 }
 
+.titletag {
+  padding: 0 !important;
+}
+
 .thumb-slider {
   display: table;
   width: 100%;
@@ -887,6 +891,9 @@ footer {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+  .owl-loaded {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -903,7 +910,7 @@ footer {
     padding-left: 0px;
   }
   main .cont-right {
-    padding-left: 20px;
+    padding-left: 0px;
   }
   .arsipblog .blok-post-list .post-information {
     width: 65%;
