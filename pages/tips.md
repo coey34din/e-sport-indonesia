@@ -1,9 +1,9 @@
 ---
 layout: layouts/blog.njk
-title: Blog
+title: Tips
 tags:
   - nav
-navtitle: Berita Terkini
+navtitle: Tips
 date: 2017-01-01
 permalink: /blog/index.html
 ---

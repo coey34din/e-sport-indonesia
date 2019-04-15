@@ -1,9 +1,9 @@
 ---
 layout: layouts/blog.njk
-title: Blog
+title: Komunitas
 tags:
   - nav
-navtitle: Berita Terkini
+navtitle: Komunitas
 date: 2017-01-01
 permalink: /blog/index.html
 ---
