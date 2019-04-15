@@ -907,7 +907,7 @@ footer {
     width: 100%;
   }
   section {
-    padding: 20px;
+    padding: 0 20px;
   }
   main .cont-left {
     padding-left: 0px;
