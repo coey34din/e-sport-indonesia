@@ -12,7 +12,7 @@ permalink: /tags/{{ tag }}/
 layout: layouts/base.njk
 ---
 {% include "components/imgpage.njk" %}
-<section>
+<section class="titletag">
 <h1>Tagged “{{ tag }}”</h1>
 </section>
 {% set postslist = collections[ tag ] %}
