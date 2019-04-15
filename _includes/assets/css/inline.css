@@ -646,6 +646,9 @@ footer {
   .wrapper {
     width: 100%;
   }
+  main h1 {
+    margin: 0;
+  }
   main .col-container {
     padding-left: 0;
     padding-right: 20px;
