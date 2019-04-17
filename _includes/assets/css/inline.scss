@@ -413,6 +413,22 @@ main{
         }
     }
 }
+.p-list{
+    padding-bottom: 0;
+    h3{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .thum-list{
+        display: inline-table;
+        float: left;
+        width: 192px;
+        margin:7px 15px 0 0;
+    }
+    aside{
+        display: inline-table;
+    }
+}
 .container{
     width: 1140px;
     padding-right: 15px;
@@ -647,6 +663,22 @@ footer{
             .post-information{
                 width:57%;
             }
+        }
+    }
+    .p-list{
+        padding-bottom: 0;
+        text-align: center;
+        h3{
+            margin-top: 10px;
+        }
+        .thum-list{
+            display: table;
+            float: none;
+            width: 192px;
+            margin:10px auto;
+        }
+        aside{
+            display: block;
         }
     }
     .btn-primary{
