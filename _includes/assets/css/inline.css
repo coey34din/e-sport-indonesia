@@ -318,7 +318,7 @@ main .col-container .point-content .description {
 .thumb-slider {
   display: table;
   width: 100%;
-  background: #FAC800;
+  background: #01d600;
   padding: 20px 0 0 0;
   text-align: center;
 }
@@ -329,7 +329,7 @@ main .col-container .point-content .description {
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 6px;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   line-height: 0;
 }
 
