@@ -6,7 +6,7 @@ backend:
 # publish_mode: editorial_workflow
 
 # media_folder: "static/img" # Media files will be stored in the repo under images/uploads
-media_folder: "static/img" 
+media_folder: "images/uploads" 
 public_folder: "/images/uploads"
 
 collections:
@@ -25,7 +25,7 @@ collections:
       - { label: "Navigation Title", name: "navtitle", widget: "string" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "nav" }
       - { label: "Article Image", name: "article_image", widget: "image" , required: false}
-      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - { label: "Featured/Thumbnail", name: "thumbnail", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" , required: false}
   # Our blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
@@ -40,12 +40,12 @@ collections:
       - { label: "Description/Summary", name: "description", widget: "text"}
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Article Image", name: "article_image", widget: "image" , required: false}
-      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - { label: "Featured/Thumbnail", name: "thumbnail", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" }
    # Our komunitas posts
   - name: "komunitas" # Used in routes, e.g., /admin/collections/blog
     label: "Komunitas" # Used in the UI
-    folder: "komunitas" # The path to the folder where the documents are stored
+    folder: "posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -55,12 +55,12 @@ collections:
       - { label: "Description/Summary", name: "description", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["komunitas"] }
       - { label: "Article Image", name: "article_image", widget: "image" , required: false}
-      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - { label: "Featured/Thumbnail", name: "thumbnail", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" }      
   # Our tips posts
   - name: "tips" # Used in routes, e.g., /admin/collections/blog
     label: "Tips" # Used in the UI
-    folder: "tips" # The path to the folder where the documents are stored
+    folder: "posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -70,12 +70,12 @@ collections:
       - { label: "Description/Summary", name: "description", widget: "text"}
       - { label: "Tags", name: "tags", widget: "list", default: ["tips"] }
       - { label: "Article Image", name: "article_image", widget: "image" , required: false}
-      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - { label: "Featured/Thumbnail", name: "thumbnail", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" } 
   # Our game posts
   - name: "game" # Used in routes, e.g., /admin/collections/blog
     label: "Game" # Used in the UI
-    folder: "game" # The path to the folder where the documents are stored
+    folder: "posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -85,12 +85,12 @@ collections:
       - { label: "Description/Summary", name: "description", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["game"] }
       - { label: "Article Image", name: "article_image", widget: "image" , required: false}
-      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - { label: "Featured/Thumbnail", name: "thumbnail", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" }          
 # Our game posts
   - name: "profil" # Used in routes, e.g., /admin/collections/blog
     label: "Profil" # Used in the UI
-    folder: "profil" # The path to the folder where the documents are stored
+    folder: "posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -100,5 +100,5 @@ collections:
       - { label: "Description/Summary", name: "description", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["profil"] }
       - { label: "Article Image", name: "article_image", widget: "image" , required: false}
-      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - { label: "Featured/Thumbnail", name: "thumbnail", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" } 

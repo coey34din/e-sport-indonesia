@@ -4,7 +4,7 @@
 				{%- if tag == "komunitas" -%}
 					<article{% if post.url == url %} data-current="current item"{% endif %} class="p-list">
 						{% if post.data.thumbnail %}
-							<img class="thum-list" src="{{ '/' | url }}images/uploads/{{ post.data.thumbnail }}">
+							<img class="thum-list" src="{{ '/' | url }}{{ post.data.thumbnail }}">
 							{% else %}
 								<img class="thum-list" src="{{ '/' | url }}static/img/no-image.png">
 						{% endif %}	
