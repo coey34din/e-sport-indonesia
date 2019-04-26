@@ -25,9 +25,21 @@ const Post = createClass({
               ${" by Author"}
             </small>
           </p>
-
-          <p>${entry.getIn(["data", "summary"], "")}</p>
-
+          <p>
+            <small>
+              <time
+                >${
+                  format(
+                    entry.getIn(["data", "modified_date"], new Date()),
+                    "DD MMM, yyyy"
+                  )
+                }</time
+              >
+              ${" by Author"}
+            </small>
+          </p>                  
+          <p>${entry.getIn(["data", "description"], "")}</p>
+          <p>${entry.getIn(["data", "article_image"], "")}</p>
           ${this.props.widgetFor("body")}
           <p>
             ${

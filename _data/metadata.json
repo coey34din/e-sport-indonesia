@@ -1,9 +1,12 @@
 {
-  "title": "E-Sport Indonesia",
-  "url": "https://eleventy-netlify-boilerplate.netlify.com",
+  "title": "Situs E-Sports Indonesia",
+  "url": "https://espidn.com",
+  "site_name": "espidn.com",
+  "logo": "https://espidn.com/static/img/logo.svg",
+  "description": "ESPIDN menyajikan kumpulan informasi mengenai permainan Esports (Electronic Sports)",
   "author": {
-    "name": "Juragan Toge",
-    "email": "dan.urbanowicz@gmail.com",
-    "github": "https://github.com/danurbanowicz"
+    "name": "E-Sport Indonesia",
+    "email": "kodai.ninja@gmail.com",
+    "github": "https://github.com/KodaiNinja"
   }
 }

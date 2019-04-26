@@ -1,13 +1,14 @@
 ---
-title: This is my first post
-summary: Why contemplating our mortality can be a powerful catalyst for change
-date: 2015-01-01
+title: 'This is my #1 komunitas post'
+date: 2015-11-11T19:08:47+08:00
+modified_date: Last Modified
+description: Why contemplating our mortality can be a powerful catalyst for change
+category: News
 tags:
   - post
-  - tech
-  - environment
-  - politics
-  - sport
+  - komunitas
+  - tags1
+  
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 

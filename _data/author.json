@@ -1,0 +1,21 @@
+{
+    "name": "E-Sports Indonesia",
+    "email": "kodai.ninja@gmail.com",
+    "avatar": "/static/img/logo.svg",
+    "twitter": {
+        "name": "@KodaiNinja",
+        "url": "https://twitter.com/KodaiNinja"
+    },
+    "linkedin": {
+        "name": "Kodai Ninja",
+        "url": "https://ca.linkedin.com/in/KodaiNinja"
+    },
+    "instagram": {
+        "name": "@KodaiNinja",
+        "url": "https://instagram.com/KodaiNinja"
+    },
+    "github": {
+        "name": "KodaiNinja",
+        "url": "https://github.com/KodaiNinja"
+    }
+}

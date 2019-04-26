@@ -4,30 +4,57 @@ section: post
 ---
 {% include "components/imgpage.njk" %}
 <section class="wrapper">
-  <article>
-    <h1>{{ title }}</h1>
-    <p>
-      <small>
-        <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}
-      </small>
-    </p>
+    <article>
+        <h1>{{ title }}</h1>
+        <p>
+        <small>
+            <time datetime="{{ date }}">
+                        {{ date | dateDisplay }}
+                    </time> by {{ metadata.author.name }}
+        </small>
+        </p>
 
-    {{ layoutContent | safe }}
+        {{ layoutContent | safe }}
 
-    {% if tags %}
-      <p>
-      {% for tag in tags %}
-        {%- if tag != "post" -%}
-          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-          <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-        {%- endif -%}
-      {% endfor %}
-      </p>
-    {% endif %}
+        {% if tags %}
+        <p>
+        {% for tag in tags %}
+            {%- if tag != "post" -%}
+            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+            <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+            {%- endif -%}
+        {% endfor %}
+        </p>
+        {% endif %}
 
-  </article>
 
-  <nav>
-    <a href="{{ '/blog/' | url }}">← Blog index</a>
-  </nav>
+        <div class="share-page">
+        <ul>
+            <li>Share this on &rarr;</li>
+            <li>
+                <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" class="sosmed" aria-label="twitter" rel="nofollow" target="_blank" title="Share on Twitter">
+                <svg class="block" fill="currentColor" role="img" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ '/' | url }}static/img/icon-library.svg#icon-twitter"></use>
+                </svg>
+            </a></li>
+            <li>
+                <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" class="sosmed" aria-label="facebook" rel="nofollow" target="_blank" title="Share on Facebook">
+                <svg class="block" fill="currentColor" role="img" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ '/' | url }}static/img/icon-library.svg#icon-facebook"></use>
+                </svg>
+            </a></li>
+            <li>
+                <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" class="sosmed" aria-label="google+" rel="nofollow" target="_blank" title="Share on Google+">
+                <svg class="block" fill="currentColor" role="img" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ '/' | url }}static/img/icon-library.svg#icon-twitter"></use>
+                </svg>
+            </a></li>
+        </ul>
+        </div>
+
+    </article>
+
+    <nav>
+        <a href="{{ '/news/' | url }}">← Index News</a>
+    </nav>
 </section>

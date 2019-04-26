@@ -1,9 +1,9 @@
 ---
-layout: layouts/blog.njk
+layout: layouts/tips.njk
 title: Tips
 tags:
   - nav
 navtitle: Tips
 date: 2017-01-01
-permalink: /blog/index.html
+permalink: /tips/index.html
 ---

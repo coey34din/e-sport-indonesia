@@ -3,9 +3,18 @@ const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+// const pluginRss = require("@11ty/eleventy-plugin-rss");
 
+module.exports = function(eleventyConfig) {
+
+  // eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+  // Add a readable date formatter filter to Nunjucks
+  eleventyConfig.addFilter("dateDisplay", require("./_includes/filters/dates.js"))
+  
+  // Add a HTML timestamp formatter filter to Nunjucks
+  eleventyConfig.addFilter("htmlDateDisplay", require("./_includes/filters/timestamp.js"))
+  
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
@@ -55,6 +64,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
+  eleventyConfig.addPassthroughCopy("images/uploads");
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
