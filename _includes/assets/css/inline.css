@@ -75,8 +75,8 @@ article img {
   margin: 15px auto;
 }
 
-article ul li img {
-  width: auto;
+article .block {
+  width: 18px;
 }
 
 .owl-loaded {
