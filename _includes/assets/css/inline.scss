@@ -83,11 +83,13 @@ article {
     }
     ul{
         li{
+            clear: both;
             float: left;
             width: auto;
             display: table;
             a{        
-                img{
+                
+                .block{
                     width: 18px;
                 }
             }

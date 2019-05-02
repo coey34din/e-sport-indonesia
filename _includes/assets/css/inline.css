@@ -76,12 +76,13 @@ article img {
 }
 
 article ul li {
+  clear: both;
   float: left;
   width: auto;
   display: table;
 }
 
-article ul li a img {
+article ul li a .block {
   width: 18px;
 }
 
