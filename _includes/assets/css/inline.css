@@ -41,7 +41,6 @@ pre {
   font-size: 14px;
   direction: ltr;
   text-align: left;
-  white-space: pre;
   word-spacing: normal;
   word-break: normal;
   -moz-tab-size: 2;
@@ -87,7 +86,7 @@ article .share-page ul li {
 
 article .share-page ul li .btn-share {
   border: 1px solid;
-  padding: 7px 5px 0px 5px;
+  padding: 8px 5px 0px 5px;
   margin: 0 5px;
   border-radius: 32px;
 }
@@ -121,8 +120,8 @@ a[rel="tag"]:visited {
   padding: 0 .5em;
   line-height: 2em;
   height: 2em;
-  border: 1px solid white;
-  background-color: white;
+  border: 1px solid #fff;
+  background-color: #fff;
   color: #000;
   border-radius: .25em;
   text-decoration: none;
@@ -132,7 +131,7 @@ a[rel="tag"]:visited {
 a[rel="tag"]:hover {
   border: 1px solid #000;
   background-color: #000;
-  color: white;
+  color: #fff;
 }
 
 a[rel="tag"]:last-child {
@@ -167,7 +166,7 @@ textarea {
 button {
   border: 1px solid #7a6202;
   background-color: #7a6202;
-  color: white;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -811,7 +810,6 @@ footer {
     transform: translate3d(0, -100%, 0);
   }
   .mh-head .mh-text {
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 20px;
@@ -885,7 +883,6 @@ footer {
   .mh-head .mh-list {
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;
-    white-space: nowrap;
     list-style: none;
     line-height: 20px;
     display: block;
