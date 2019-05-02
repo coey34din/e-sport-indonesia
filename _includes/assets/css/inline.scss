@@ -628,11 +628,7 @@ footer{
     }
     .wrapper{
         width: 100%;
-        .article{
-            img{
-                width:100%;
-            }
-        }
+        
     }
     main{
         h1{
@@ -653,6 +649,11 @@ footer{
             .home-box{
                 padding: 0;
                 margin-top: 30px;
+            }
+        }
+        article{
+            img{
+                width:100%;
             }
         }
       
