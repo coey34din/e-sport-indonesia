@@ -84,8 +84,10 @@ article {
     }
     .share-page{
         clear: both;
+        display: table;
         ul{
             li{
+                padding: 2px 8px;
                 display: table;
                 float: left;                
                 .btn-share{           

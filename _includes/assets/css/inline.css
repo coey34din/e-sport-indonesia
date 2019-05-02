@@ -78,9 +78,11 @@ article img {
 
 article .share-page {
   clear: both;
+  display: table;
 }
 
 article .share-page ul li {
+  padding: 2px 8px;
   display: table;
   float: left;
 }
