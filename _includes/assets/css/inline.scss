@@ -77,6 +77,10 @@ article {
     margin-bottom: 1em;
     padding-bottom: 1em;
     border-bottom: 1px solid #939393;
+    img{
+        width: 100%;
+        margin: 15px auto;
+    }
 }
 .owl-loaded{
     margin-bottom: 30px;
@@ -624,7 +628,7 @@ footer{
 }
 @media (max-width: 768px){
     header{
-       display: none;
+        display: none;
     }
     .wrapper{
         width: 100%;
@@ -651,12 +655,6 @@ footer{
                 margin-top: 30px;
             }
         }
-        article{
-            img{
-                width:100%;
-            }
-        }
-      
     }
     
     .thumb-slider{
