@@ -81,22 +81,14 @@ article {
         width: 100%;
         margin: 15px auto;
     }
-    ul{
-        li{
-            clear: both;
+    .share-page{
+        clear: both;
+        .btn-share{           
             float: left;
-            width: auto;
-            display: table;
-            a{        
-                
-                .block{
-                    width: 18px;
-                }
-            }
+            height: 18px;
+            
         }
     }
-    
-    
 }
 .owl-loaded{
     margin-bottom: 30px;

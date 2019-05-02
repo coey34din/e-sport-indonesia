@@ -75,15 +75,13 @@ article img {
   margin: 15px auto;
 }
 
-article ul li {
+article .share-page {
   clear: both;
-  float: left;
-  width: auto;
-  display: table;
 }
 
-article ul li a .block {
-  width: 18px;
+article .share-page .btn-share {
+  float: left;
+  height: 18px;
 }
 
 .owl-loaded {
