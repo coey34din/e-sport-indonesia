@@ -83,19 +83,17 @@ article .share-page {
 
 article .share-page ul li {
   float: left;
+}
+
+article .share-page ul li .btn-share {
   border: 1px solid;
   padding: 6px 6px 0px 6px;
   margin: 0 5px;
   border-radius: 32px;
 }
 
-article .share-page ul li:hover {
+article .share-page ul li .btn-share:hover {
   background: #939393;
-}
-
-article .share-page ul li .btn-share {
-  float: left;
-  height: 18px;
 }
 
 article .share-page ul li .btn-share svg {
