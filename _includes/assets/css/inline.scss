@@ -650,12 +650,15 @@ footer{
                 margin-top: 30px;
             }
         }
-    }
-    .article{
-        img{
-            width:100%;
+        section{
+            .article{
+                img{
+                    width:100%;
+                }
+            }
         }
     }
+    
     .thumb-slider{
         .slider-box {
             width: 40.711111%;
