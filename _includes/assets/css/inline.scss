@@ -447,10 +447,11 @@ main{
         padding-top: 0;
     }
     .thum-list{
-        display: inline-table;
-        float: left;
-        width: 192px;
-        margin:7px 15px 0 0;
+            float: left;
+            width: 192px;
+            background: #ccc;
+            margin-right: 15px;
+            padding: 3px;
     }
     aside{
         display: inline-table;

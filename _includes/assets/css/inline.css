@@ -484,10 +484,11 @@ main .col-container .point-content .description {
 }
 
 .p-list .thum-list {
-  display: inline-table;
   float: left;
   width: 192px;
-  margin: 7px 15px 0 0;
+  background: #ccc;
+  margin-right: 15px;
+  padding: 3px;
 }
 
 .p-list aside {
