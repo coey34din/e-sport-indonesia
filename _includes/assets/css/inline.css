@@ -70,12 +70,22 @@ article {
   border-bottom: 1px solid #939393;
 }
 
+article img {
+  width: 100%;
+  margin: 15px auto;
+}
+
 article .share-page {
   clear: both;
 }
 
 article .share-page .btn-share {
   float: left;
+  height: 18px;
+}
+
+article .share-page .btn-share svg {
+  width: 18px;
   height: 18px;
 }
 

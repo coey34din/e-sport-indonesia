@@ -77,12 +77,19 @@ article {
     margin-bottom: 1em;
     padding-bottom: 1em;
     border-bottom: 1px solid #939393;
-   
+    img{
+        width: 100%;
+        margin: 15px auto;
+    }
     .share-page{
         clear: both;
         .btn-share{           
             float: left;
             height: 18px;
+            svg{
+            width: 18px;
+            height: 18px;
+            }
             
         }
     }
