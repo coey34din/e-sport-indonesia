@@ -25,6 +25,7 @@ const Game = createClass({
               ${" by Author"}
             </small>
           </p>
+           - { label: "Category", name: "category", widget: "list", default: ["News"] }
           <p>
             <small>
               <time
@@ -38,8 +39,8 @@ const Game = createClass({
               ${" by Author"}
             </small>
           </p>
+          <p>${entry.getIn(["data", "category"], "")}</p>
           <p>${entry.getIn(["data", "description"], "")}</p>
-
           <p>${entry.getIn(["data", "article_image"], "")}</p>
           <p>${entry.getIn(["data", "thumbnail"], "")}</p>
           ${this.props.widgetFor("body")}

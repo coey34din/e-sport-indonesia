@@ -1,12 +1,12 @@
 ---
-layout: layouts/contact.njk
 title: Kontak Kami
+layout: layouts/contact.njk
+date: 2019-04-27T06:15:54.985Z
+modified_date: 2019-04-27T06:15:54.995Z
+permalink: /contact/index.html
+navtitle: Kontak Kami
 tags:
   - nav
-navtitle: Kontak Kami
-section: contact
-date: 2018-01-01
-permalink: /contact/index.html
 ---
 Pemirsa sekalian, Kami menyadari bahwa blog sederhana ini masih jauh dari sempurna, maka sangat dinantikan masukan masukan dan dari Agan agan semuanya, 
 Atau mau sekedar bertanya . . . monggo gan. 

@@ -10,7 +10,7 @@
             <span class="mh-btns-left">
                 <a class="fa fa-bars" href="#menu"></a>
             </span>
-            <span class="mh-text">E-SPORT INDONESIA</span>
+           <span class="mh-text">{{ site.name }} | {{ site.title }}</span>
         </div>
 		<header>
 			<div class="wrapper">
@@ -18,7 +18,7 @@
                     <div class="logo">
                         <em>
                             <img  src="{{ '/' | url }}static/img/logo.svg" alt="e-sport indonesia">
-                            <a id="lg" href="{{ '/' | url }}">{{ metadata.title }}</a>
+                            <a id="lg" href="{{ '/' | url }}">{{ site.name }} | {{ site.title }}</a>
                         </em>
                     </div>
                     <div class="top-menu">

@@ -1,9 +1,14 @@
 {
     "name": "espidn.com",
-    "title": "ESPIDN.COM | Situs Esports Indonesia",
+    "title": "Situs Esports Indonesia",
     "url": "https://www.espidn.com",
     "description": "ESPIDN menyajikan kumpulan informasi mengenai permainan Esports (Electronic Sports)",
-    "logo": "https://espidn.com/static/img/logo.svg",
+    "logo": "/static/img/logo.svg",
     "feed": "feed.xml",
-    "privacy_email": "kodai.ninja@gmail.com"
+    "privacy_email": "kodai.ninja@gmail.com",
+    "images": {
+        "favicon": "/static/img/favicon.ico",
+        "twitter": "/static/img/twitter.jpg",
+        "og": "/static/img/og.jpg"
+    }
 }

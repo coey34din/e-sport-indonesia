@@ -18,8 +18,8 @@
                 {%set a = a + 1 %}
                 <aside {% if post.url == url %} data-current="current item"{% endif %} class="post-list-styles">
                     <div class="image">
-                        {% if post.data.thumbs %}
-                            <img src="{{ '/' | url }}static/img/{{ post.data.thumbs }}">
+                        {% if post.data.thumbnail %}
+                            <img src="{{ url }}{{ post.data.thumbnail }}">
                             {% else %}
                                 <img  src="{{ '/' | url }}static/img/no-image.png">
                         {% endif %}		

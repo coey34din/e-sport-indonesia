@@ -8,25 +8,9 @@ backend:
 # media_folder: "static/img" # Media files will be stored in the repo under images/uploads
 media_folder: "images/uploads" 
 public_folder: "/images/uploads"
+logo_url: https://espidn.com/static/img/logo.svg
 
 collections:
- # Our pages e.g. About
-  - name: "pages"
-    label: "Page"
-    folder: "pages"
-    create: false # Change to true to allow editors to create new pages
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Modified Date", name: "modified_date", widget: "datetime" }
-      - { label: "Description/Summary", name: "description", widget: "text" , required: false}
-      - { label: "Permalink", name: "permalink", widget: "string" }
-      - { label: "Navigation Title", name: "navtitle", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "hidden", default: "nav" }
-      - { label: "Article Image", name: "article_image", widget: "image" , required: false}
-      - { label: "Featured/Thumbnail", name: "thumbnail", widget: "image", required: false}
-      - { label: "Body", name: "body", widget: "markdown" , required: false}
   # Our blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Post" # Used in the UI
@@ -38,6 +22,7 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Modified Date", name: "modified_date", widget: "datetime" }
       - { label: "Description/Summary", name: "description", widget: "text"}
+      - { label: "Category", name: "category", widget: "select", multiple: true, options: ["News","Games","Profil","Komunitas", "Tips"], default: ["News"] }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Article Image", name: "article_image", widget: "image" , required: false}
       - { label: "Featured/Thumbnail", name: "thumbnail", widget: "image", required: false}
@@ -53,7 +38,8 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Modified Date", name: "modified_date", widget: "datetime" }
       - { label: "Description/Summary", name: "description", widget: "text" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["komunitas"] }
+      - { label: "Category", name: "category", widget: "select", multiple: true, options: ["News","Games","Profil","Komunitas", "Tips"], default: ["Komunitas"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post","komunitas"] }
       - { label: "Article Image", name: "article_image", widget: "image" , required: false}
       - { label: "Featured/Thumbnail", name: "thumbnail", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" }      
@@ -68,7 +54,8 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Modified Date", name: "modified_date", widget: "datetime" }
       - { label: "Description/Summary", name: "description", widget: "text"}
-      - { label: "Tags", name: "tags", widget: "list", default: ["tips"] }
+      - { label: "Category", name: "category", widget: "select", multiple: true, options: ["News","Games","Profil","Komunitas", "Tips"], default: ["Tips"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post","tips"] }
       - { label: "Article Image", name: "article_image", widget: "image" , required: false}
       - { label: "Featured/Thumbnail", name: "thumbnail", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" } 
@@ -83,11 +70,12 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Modified Date", name: "modified_date", widget: "datetime" }
       - { label: "Description/Summary", name: "description", widget: "text" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["game"] }
+      - { label: "Category", name: "category", widget: "select", multiple: true, options: ["News","Games","Profil","Komunitas", "Tips"], default: ["Games"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post","games"] }
       - { label: "Article Image", name: "article_image", widget: "image" , required: false}
       - { label: "Featured/Thumbnail", name: "thumbnail", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" }          
-# Our game posts
+# Our profil posts
   - name: "profil" # Used in routes, e.g., /admin/collections/blog
     label: "Profil" # Used in the UI
     folder: "posts" # The path to the folder where the documents are stored
@@ -98,7 +86,26 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Modified Date", name: "modified_date", widget: "datetime" }
       - { label: "Description/Summary", name: "description", widget: "text" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["profil"] }
+      - { label: "Category", name: "category", widget: "select", multiple: true, options: ["News","Games","Profil","Komunitas", "Tips"], default: ["Profil"] }      
+      - { label: "Tags", name: "tags", widget: "list", default: ["post","profil"] }
       - { label: "Article Image", name: "article_image", widget: "image" , required: false}
       - { label: "Featured/Thumbnail", name: "thumbnail", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" } 
+# Our pages e.g. About
+  - name: "pages"
+    label: "Page"
+    folder: "pages"
+    create: false # Change to true to allow editors to create new pages
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Layout", name: "layout", widget: "string", default: "layouts/home"}
+      - { label: "Publish Date", name: "date", widget: "datetime"}
+      - { label: "Modified Date", name: "modified_date", widget: "datetime"}
+      - { label: "Description/Summary", name: "description", widget: "text" , required: false}
+      - { label: "Permalink", name: "permalink", widget: "string" }
+      - { label: "Navigation Title", name: "navtitle", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "hidden", default: "nav" }
+      - { label: "Article Image", name: "article_image", widget: "image" , required: false}
+      - { label: "Featured/Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - { label: "Body", name: "body", widget: "markdown" , required: false}

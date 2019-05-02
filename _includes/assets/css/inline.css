@@ -24,11 +24,11 @@ code {
 }
 
 a[href] {
-  color: #01d600;
+  color: #FFF0EB;
 }
 
 a[href]:visited {
-  color: #ffffff;
+  color: #FFF0EB;
 }
 
 a[href]:not(:hover) {

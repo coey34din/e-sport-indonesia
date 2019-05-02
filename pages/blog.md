@@ -1,9 +1,11 @@
 ---
-layout: layouts/blog.njk
 title: News
+layout: layouts/blog.njk
+date: 2016-01-02T04:00:28.124Z
+modified_date: 2016-01-02T04:00:00.000Z
+permalink: /news/index.html
+navtitle: News
 tags:
   - nav
-navtitle: News 
-date: 2017-01-01
-permalink: /news/index.html
 ---
+

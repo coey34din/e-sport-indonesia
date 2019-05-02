@@ -1,0 +1,32 @@
+{
+    "main": [
+        {
+            "label": "Home",
+            "url": "/"
+        },       
+        {
+            "label": "News",
+            "url": "/news/"
+        },
+        {
+            "label": "Games",
+            "url": "/games/"
+        },
+        {
+            "label": "Tips",
+            "url": "/tips/"
+        },
+        {
+            "label": "Profil",
+            "url": "/profil/"
+        },
+        {
+            "label": "Komunitas",
+            "url": "/komunitas/"
+        },
+        {
+            "label": "Contact",
+            "url": "/contact/"
+        }
+    ]
+}

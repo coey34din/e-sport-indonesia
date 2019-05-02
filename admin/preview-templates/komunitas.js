@@ -38,6 +38,7 @@ const Komunitas = createClass({
               ${" by Author"}
             </small>
           </p>
+          <p>${entry.getIn(["data", "category"], "")}</p>
           <p>${entry.getIn(["data", "description"], "")}</p>
           <p>${entry.getIn(["data", "article_image"], "")}</p>
           ${this.props.widgetFor("body")}
