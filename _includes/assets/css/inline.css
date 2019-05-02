@@ -330,7 +330,7 @@ main .col-container .point-content .title {
   margin-top: -5px;
   margin-bottom: 0;
   overflow: hidden;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 main .col-container .point-content .description {
