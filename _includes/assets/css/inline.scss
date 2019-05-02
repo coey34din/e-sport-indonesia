@@ -87,9 +87,12 @@ article {
         display: table;
         ul{
             li{
-                padding: 2px 8px;
-                display: table;
-                float: left;                
+                float: left;
+                border: 1px solid;
+                padding: 6px 6px 0px 6px;
+                margin: 0 5px;
+                border-radius: 32px;      
+                &:hover{background: #939393}          
                 .btn-share{           
                     float: left;
                     height: 18px;
