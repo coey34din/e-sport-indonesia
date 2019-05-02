@@ -60,7 +60,7 @@ ul {
 }
 
 .yellow {
-  color: #fac800;
+  color: #01d600;
 }
 
 /* Posts List */
@@ -324,7 +324,7 @@ main .col-container .point-content {
 }
 
 main .col-container .point-content .title {
-  color: #fac800;
+  color: #01d600;
   font-weight: 600;
   font-family: Khand;
   font-size: 16px;
@@ -350,7 +350,7 @@ main .col-container .point-content .description {
 .thumb-slider {
   display: table;
   width: 100%;
-  background: #FAC800;
+  background: #01d600;
   padding: 20px 0 0 0;
   text-align: center;
 }
@@ -398,7 +398,7 @@ main .col-container .point-content .description {
 }
 
 .arsipblog .blok-post-list .content-title-element .title span {
-  color: #fac800;
+  color: #01d600;
 }
 
 .arsipblog .blok-post-list .content-title-element .description {
@@ -440,8 +440,8 @@ main .col-container .point-content .description {
 }
 
 .arsipblog .post-list-styles .more-button {
-  background: #fac800;
-  border: 1px solid #fac800;
+  background: #01d600;
+  border: 1px solid #01d600;
   border-radius: 25px;
   float: right;
   display: block;
@@ -640,8 +640,8 @@ main .col-container .point-content .description {
 }
 
 .btn-primary:hover {
-  background: #fac800;
-  border-color: #fac800;
+  background: #01d600;
+  border-color: #01d600;
 }
 
 footer {

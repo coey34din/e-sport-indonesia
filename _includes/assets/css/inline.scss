@@ -1,7 +1,7 @@
 
 $c-white: #FFF0EB;
 $c-black : #000;
-$c-yellow: #fac800;
+$c-yellow: #01d600;
 $c-gray1: #3A3A3A;
 $c-grey2: #333333;
 $c-red :#dd3333;
@@ -304,7 +304,7 @@ main{
             display: inline-block;
             width: calc(100% - 65px);
             .title{
-                color: #fac800;
+                color: #01d600;
                 font-weight: 600;
                 font-family: Khand;
                 font-size: 16px;
@@ -331,7 +331,7 @@ main{
 .thumb-slider{
     display: table;
     width: 100%;
-    background: #FAC800;
+    background: #01d600;
     padding: 20px 0 0 0;
     text-align: center;
     .slider-box{
@@ -369,7 +369,7 @@ main{
                 text-transform: uppercase;
                 line-height: 1.1;
                 span {
-                    color: #fac800;
+                    color: #01d600;
                 }
             }
             .description {
@@ -406,8 +406,8 @@ main{
             overflow: hidden;
         }
         .more-button{
-            background: #fac800;
-            border: 1px solid #fac800;
+            background: #01d600;
+            border: 1px solid #01d600;
             border-radius: 25px;
             float: right;
             display: block;
@@ -579,8 +579,8 @@ main{
     z-index: 3000;
     text-decoration: none;
     &:hover{
-        background: #fac800;
-        border-color: #fac800;
+        background: #01d600;
+        border-color: #01d600;
     }
 }
 footer{
