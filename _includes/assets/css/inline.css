@@ -75,7 +75,13 @@ article img {
   margin: 15px auto;
 }
 
-article .block {
+article li {
+  float: left;
+  width: auto;
+  display: table;
+}
+
+article li a .block {
   width: 18px;
 }
 

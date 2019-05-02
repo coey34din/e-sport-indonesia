@@ -81,9 +81,19 @@ article {
         width: 100%;
         margin: 15px auto;
     }
-    .block{
-        width: 18px;
+    li{
+        float: left;
+        width: auto;
+        display: table;
+        a{
+        
+            .block{
+                width: 18px;
+            }
+        }
     }
+    
+    
 }
 .owl-loaded{
     margin-bottom: 30px;
