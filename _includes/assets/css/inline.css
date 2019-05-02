@@ -82,6 +82,7 @@ article .share-page {
 
 article .share-page ul li {
   display: table;
+  float: left;
 }
 
 article .share-page ul li .btn-share {

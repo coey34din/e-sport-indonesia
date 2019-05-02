@@ -86,7 +86,8 @@ article {
         clear: both;
         ul{
             li{
-                display: table;                
+                display: table;
+                float: left;                
                 .btn-share{           
                     float: left;
                     height: 18px;
