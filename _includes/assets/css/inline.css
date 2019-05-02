@@ -23,12 +23,9 @@ code {
   line-height: 1.5;
 }
 
-a[href] {
-  color: #FFF0EB;
-}
-
+a[href],
 a[href]:visited {
-  color: #FFF0EB;
+  color: goldenrod;
 }
 
 a[href]:not(:hover) {
@@ -63,7 +60,7 @@ ul {
 }
 
 .yellow {
-  color: #01d600;
+  color: #fac800;
 }
 
 /* Posts List */
@@ -71,8 +68,6 @@ article {
   margin-bottom: 1em;
   padding-bottom: 1em;
   border-bottom: 1px solid #939393;
-  display: table;
-  width: 100%;
 }
 
 .owl-loaded {
@@ -209,9 +204,9 @@ main {
 
 main h1 {
   font-family: "Khand";
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 0;
+  line-height: 1;
   display: table;
 }
 
@@ -296,7 +291,7 @@ main .col-container .point-content {
 }
 
 main .col-container .point-content .title {
-  color: #01d600;
+  color: #fac800;
   font-weight: 600;
   font-family: Khand;
   font-size: 16px;
@@ -323,19 +318,18 @@ main .col-container .point-content .description {
 .thumb-slider {
   display: table;
   width: 100%;
-  background: #01d600;
+  background: #FAC800;
   padding: 20px 0 0 0;
   text-align: center;
-  margin-top: 20px;
 }
 
 .thumb-slider .slider-box {
-  width: 18.5%;
+  width: 18.711111%;
   display: inline-table;
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 6px;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   line-height: 0;
 }
 
@@ -372,7 +366,7 @@ main .col-container .point-content .description {
 }
 
 .arsipblog .blok-post-list .content-title-element .title span {
-  color: #01d600;
+  color: #fac800;
 }
 
 .arsipblog .blok-post-list .content-title-element .description {
@@ -414,8 +408,8 @@ main .col-container .point-content .description {
 }
 
 .arsipblog .post-list-styles .more-button {
-  background: #01d600;
-  border: 1px solid #01d600;
+  background: #fac800;
+  border: 1px solid #fac800;
   border-radius: 25px;
   float: right;
   display: block;
@@ -590,9 +584,6 @@ main .col-container .point-content .description {
 .owl-carousel .owl-nav [class*="owl-"]:hover {
   background: transparent;
 }
-.owl-dots {
-  display: none;
-}
 
 .btn {
   margin-top: 30px;
@@ -616,9 +607,8 @@ main .col-container .point-content .description {
 }
 
 .btn-primary:hover {
-  background: #01d600;
-  border-color: #01d600;
-  color: #ffffff;
+  background: #fac800;
+  border-color: #fac800;
 }
 
 footer {
@@ -627,38 +617,6 @@ footer {
   background: #0A0A0A;
 }
 
-.opps {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 100px;
-}
-
-.opps img {
-  margin: 100px auto 30px auto;
-  width: 338px;
-  display: table;
-}
-.share-page ul li {
-  float: left;
-  padding: 2px;
-}
-.block {
-	display: block;
-	width: 20px;
-  height: 20px;
-  color: #01d600;
-  margin: 0 auto;
-}
-.sosmed {
-  display: table;
-  float:left;
-  margin-right: 15px;
-}
-.main_content {
-  display: table;
-  width: 100%;
-}
 @media screen and (min-width: 768px) {
   :root {
     font-size: 1.1rem;
@@ -667,8 +625,6 @@ footer {
     display: none;
   }
 }
-
-
 
 @media (max-width: 560px) {
   .header-area .logo {
@@ -690,9 +646,6 @@ footer {
   }
   .arsipblog .blok-post-list .content-title-element .title {
     font-size: 35px;
-  }
-  .opps img {
-    width: 280px;
   }
 }
 
