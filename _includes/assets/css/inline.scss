@@ -273,9 +273,8 @@ main{
     .col-container{
         width: 50%;
         padding-left: 20px;
-        display: inline-table;
+        display: inline-flex;
         margin-bottom: 20px;
-    
         .point{
             width: 50px;
             height: 50px;
@@ -311,7 +310,6 @@ main{
                 font-size: 16px;
                 margin-top: -5px;
                 margin-bottom: 0;
-                height: 35px;
                 overflow: hidden;
                 line-height: 1;
             }
