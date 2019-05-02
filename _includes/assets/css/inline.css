@@ -73,18 +73,23 @@ article {
 article img {
   width: 100%;
   margin: 15px auto;
+  padding: 10px;
 }
 
 article .share-page {
   clear: both;
 }
 
-article .share-page .btn-share {
+article .share-page ul li {
+  display: table;
+}
+
+article .share-page ul li .btn-share {
   float: left;
   height: 18px;
 }
 
-article .share-page .btn-share svg {
+article .share-page ul li .btn-share svg {
   width: 18px;
   height: 18px;
 }

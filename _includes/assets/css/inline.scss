@@ -80,18 +80,25 @@ article {
     img{
         width: 100%;
         margin: 15px auto;
+        padding: 10px;
     }
     .share-page{
         clear: both;
-        .btn-share{           
-            float: left;
-            height: 18px;
-            svg{
-            width: 18px;
-            height: 18px;
+        ul{
+            li{
+                display: table;                
+                .btn-share{           
+                    float: left;
+                    height: 18px;
+                    svg{
+                        width: 18px;
+                        height: 18px;
+                    }
+                    
+                }
             }
-            
         }
+        
     }
 }
 .owl-loaded{
