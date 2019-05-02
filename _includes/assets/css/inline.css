@@ -75,6 +75,10 @@ article img {
   margin: 15px auto;
 }
 
+article ul li img {
+  width: auto;
+}
+
 .owl-loaded {
   margin-bottom: 30px;
 }
