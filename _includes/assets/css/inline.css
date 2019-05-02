@@ -14,7 +14,7 @@ body {
 
 body {
   background-color: #3A3A3A;
-  color: #FFF0EB;
+  color: #fff;
 }
 
 p,
@@ -25,7 +25,7 @@ code {
 
 a[href],
 a[href]:visited {
-  color: #FFF0EB;
+  color: #fff;
 }
 
 a[href]:not(:hover) {
@@ -266,7 +266,7 @@ main .cont-left {
 
 main .cont-left .font-B {
   font-size: 25px;
-  color: #FFF0EB;
+  color: #fff;
   line-height: 1.1;
   text-align: center;
   font-family: "Khand";
@@ -361,7 +361,7 @@ main .col-container .point-content .description {
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 6px;
-  border: 1px solid #FFF0EB;
+  border: 1px solid #fff;
   line-height: 0;
 }
 
@@ -392,7 +392,7 @@ main .col-container .point-content .description {
   font-family: 'Khand';
   font-weight: 700;
   font-size: 35px;
-  color: #FFF0EB;
+  color: #fff;
   text-transform: uppercase;
   line-height: 1.1;
 }
@@ -445,7 +445,7 @@ main .col-container .point-content .description {
   border-radius: 25px;
   float: right;
   display: block;
-  color: #FFF0EB;
+  color: #fff;
   font-size: 13px;
   text-transform: uppercase;
   padding: 7px 26px 5px;
@@ -624,8 +624,8 @@ main .col-container .point-content .description {
 
 .btn-primary {
   background: transparent;
-  border: 2px solid #FFF0EB;
-  color: #FFF0EB;
+  border: 2px solid #fff;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 500;
   padding: 10px 45px 9px;
