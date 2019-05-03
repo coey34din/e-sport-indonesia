@@ -412,7 +412,6 @@ main .col-container .point-content .description {
 }
 
 .arsipblog .post-list-styles .image {
-  border-radius: 8px;
   overflow: hidden;
   position: relative;
   margin-bottom: 21px;
@@ -424,12 +423,14 @@ main .col-container .point-content .description {
 }
 
 .arsipblog .post-list-styles .title {
-  color: #fc0000;
+  color: #dd3333;
   font-size: 25px;
   line-height: 1.1;
   font-weight: 700;
   margin-bottom: 9px;
-  font-family: 'Khand';
+  font-family: Khand;
+  height: 55px;
+  overflow: hidden;
 }
 
 .arsipblog .post-list-styles .excerpt {

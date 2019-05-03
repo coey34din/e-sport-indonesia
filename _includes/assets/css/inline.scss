@@ -383,7 +383,6 @@ main{
         padding: 0px 15px;
         float: left;    
         .image{
-            border-radius: 8px;
             overflow: hidden;
             position: relative;
             margin-bottom: 21px;
@@ -393,12 +392,14 @@ main{
             }
         }
         .title{
-            color: #fc0000;
+            color: $c-red;
             font-size: 25px;
             line-height: 1.1;
             font-weight: 700;
             margin-bottom: 9px;
-            font-family: 'Khand';
+            font-family: Khand;
+            height: 55px;
+            overflow: hidden;
         }
         .excerpt{
             margin-bottom: 23px;
